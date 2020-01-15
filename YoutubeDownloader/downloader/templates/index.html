@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<title>YouTube Downloader</title>
+<style>
+html, body {
+text-align: center;
+}
+p {text-align: left;}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #697281;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #F1F5F8;
+  background: #26476E url(background.png) repeat-x;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+#page
+{
+  margin: 0 auto 0 auto; 
+  display: block; 
+  height:auto;
+  position: relative; 
+  overflow: hidden; 
+  width: 753px;
+}
+
+#header
+{
+margin-top:25px;
+padding-top:63px;
+padding-left:30px;
+padding-right:30px;
+background-image:url(header.png);
+background-repeat:no-repeat;
+height:122px;
+width:753px;
+overflow:hidden;
+}
+
+#header h1, #header h2
+{
+margin-left:0px;
+width:693px;
+position:relative;
+color:#000000;
+text-align:center;
+font-size:15px;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+clear:both;
+}
+
+#header h1
+{
+margin-left:0px;
+width:693px;
+position:relative;
+color:#26476E;
+font-size:30px;
+}
+
+
+
+#bar
+{
+background-image:url(bar.png);
+background-repeat:no-repeat;
+height:53px;
+width:750px;
+padding-bottom:15px;
+text-align:center;
+margin:0 auto 0 auto;
+}
+
+#bar ul {
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	list-style-type: none;
+	height: 74px;
+	text-align:center;
+}
+#bar ul li , #bar ul li a, #bar ul li a:visited{
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	overflow: hidden;
+	display: inline;
+	text-align:center;
+	line-height:65px;
+	color:#26476E;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+#bar ul li 
+{
+color:#ffffff;
+text-decoration:underline;
+
+}
+.contentTitle
+{
+width:700px;
+height:44px;
+margin-top:20px;
+margin-left:0px;
+margin-right:25px;
+background-image:url(tab_back.png);
+background-repeat:no-repeat;
+
+}
+
+.contentTitle h1
+{
+margin-left:21px;
+padding-top:8px;
+font-size:21px;
+font-weight:bold;
+letter-spacing:-1px;
+color:#FFFFFF;
+}
+
+
+.contentText
+{
+width:680px;
+padding-left:30px;
+padding-right:30px;
+font-size:13px;
+color:#FFFFFF;
+line-height:30px;
+}
+
+a
+{
+text-decoration:none;
+color:#F1F3F8;
+}
+
+a:hover
+{
+border-bottom:1px dotted #F1F3F8;
+}
+
+
+#footer {
+width: 750px;
+height:20px;
+text-align:center;
+font-size:9px;
+color:#223F8D;
+padding-top:20px;
+}
+
+html, body {
+text-align: center;
+}
+p {
+margin:7px;
+text-align: left;
+text-align:justify;
+}
+.form{
+    position:relative;
+    left:200px;
+}
+</style>
+</head>
+
+<body>
+    <div id="page">
+		
+        <div id="header">
+        	<h1 style="color:white;">Download Your Video YouTube »</h1>
+            <h2>coded with <3  by Mesh</h2>
+            
+      </div>
+        <div id="bar">
+            <ul>
+                <li>Home</li>
+                <li>Pictures</li>
+                <li>My Bio</li>
+                <li>My Company</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+      </div>
+       
+        <div class="contentTitle">
+        <div class="form"> 
+           <form action="/your-name/" method="post">
+                <input placeholder="input your url" id="your_name" type="text" name="your_name" value="{{ current_name }}">
+                <input type="submit" value="Convert">
+           </form>
+        </div>
+        <h1>Convert To {{type}} </h1></div><br><br>
+        <div class="contentText">
+        
+        <p> By using our converter you can easily convert YouTube videos to mp3 (audio) or mp4 (video) files and download them for free - this service works for computers, tablets and mobile devices.
+
+The videos are always converted in the highest available quality. Please note that we can only convert videos up to a length of 1 hour - the limitation is necessary, so the conversion of any video will not take more than a couple of minutes.
+
+Our service is for free and does not require any software or registration. By using our service you are accepting our terms of use.
+
+To convert a video, copy the YouTube video URL into our converter, choose a format and click the convert button. As soon as the conversion is finished you can download the file by clicking on the download button.
+
+Enjoy! We hope you like our service. </p>
+        </div>
+</div>
+        <div id="footer">Developed by Mesh</div>
+</body>
+</html>
