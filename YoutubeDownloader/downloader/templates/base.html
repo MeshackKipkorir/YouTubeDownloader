@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" >
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -179,6 +179,7 @@ text-align:justify;
 </head>
 
 <body>
+    {% block content %}
     <div id="page">
 		
         <div id="header">
@@ -199,13 +200,12 @@ text-align:justify;
        
         <div class="contentTitle">
         <div class="form"> 
-           <form action="." method="POST">
-                {% csrf_token %}
-                {{form.link}}
+           <form action="/your-name/" method="post">
+                <input placeholder="input your url" id="your_name" type="text" name="your_name" value="{{ current_name }}">
                 <input type="submit" value="Convert">
            </form>
         </div>
-        <h1>Convert {{video_title}}To {{type}} </h1></div><br><br>
+        <h1>Convert To {{type}} </h1></div><br><br>
         <div class="contentText">
         
         <p> By using our converter you can easily convert YouTube videos to mp3 (audio) or mp4 (video) files and download them for free - this service works for computers, tablets and mobile devices.
@@ -220,5 +220,6 @@ Enjoy! We hope you like our service. </p>
         </div>
 </div>
         <div id="footer">Developed by Mesh</div>
+          {% endblock content %}
 </body>
 </html>
